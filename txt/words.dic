@@ -1,4 +1,4 @@
-1
+46
 OSX
 Python
 python
@@ -42,3 +42,6 @@ bin
 docker
 Atom
 Code
+REPL
+Studio
+Microsoft
