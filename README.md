@@ -10,6 +10,7 @@ Enseñando pensamiento computacional a partir de python one-liners
    con cadenas.
    1. Qué es la precedencia y por qué debería de importarme.
    2. Unicode importa.
+   3. Mezclar o no mezclar. *Duck typing* y lo que no se debe hacer. 
 3. Casi lo mismo, pero en JavaScript
 4. Lo que el lenguaje no da.
    1. Trabajando con bibliotecas y qué significa.
