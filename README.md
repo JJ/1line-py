@@ -4,7 +4,7 @@ Enseñando pensamiento computacional a partir de python one-liners
 
 ## Una estructura (que seguramente cambiará)
 
-1. Para empezar a trabajar.
+1. [Para empezar a trabajar](txt/01.empezar.md).
 1. Tipos de datos básicos y cómo trabajar con ellos.
 2. Operaciones básicas con tipos de datos: aritméticas, operaciones
    con cadenas.
