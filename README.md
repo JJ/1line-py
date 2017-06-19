@@ -20,3 +20,6 @@ Enseñando pensamiento computacional a partir de python one-liners
    1. Trabajando con bibliotecas y qué significa.
    2. Algunas bibliotecas interesantes.
 
+## Agradecimientos
+
+A [Manu](https://github.com/Makova) por correcciones. 
