@@ -1,5 +1,7 @@
 # Python línea a línea
 
+[![Build Status](https://travis-ci.org/JJ/1line-py.svg?branch=master)](https://travis-ci.org/JJ/1line-py)
+
 Enseñando pensamiento computacional a partir de python one-liners
 
 ## Una estructura (que seguramente cambiará)
