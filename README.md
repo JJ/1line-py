@@ -16,6 +16,7 @@ Enseñando pensamiento computacional a partir de python one-liners
    3. Casi lo mismo, pero en JavaScript
 5. [Lógica e ilógica](txt/03.logica.md).
 6. [Datos menos simples](txt/04.componiendo.md)
+   1. Funciones
    1. Combinando datos.
    2. Trabajando con esos datos.
 4. Lo que el lenguaje no da.
