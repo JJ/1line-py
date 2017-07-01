@@ -26,5 +26,5 @@ Enseñando pensamiento computacional a partir de python one-liners
 ## Agradecimientos
 
 A [Manu](https://github.com/Makova) por
-correcciones. A [Jesús Leganés](https://github.com/piranna) por
+correcciones y a [José Manuel Colella](https://github.com/josecolella) por varias aportaciones.  A [Jesús Leganés](https://github.com/piranna) por
 consejos y revisiones. 
