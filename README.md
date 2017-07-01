@@ -8,17 +8,8 @@ Enseñando pensamiento computacional a partir de python one-liners
 
 1. [Para empezar a trabajar](txt/01.empezar.md).
 1. [Tipos de datos básicos y cómo trabajar con ellos.](txt/02.datos.md)
-   1. Operaciones básicas con tipos de datos: aritméticas, operaciones
-   con cadenas.
-   1. Qué es la precedencia y por qué debería de importarme.
-   2. Unicode importa.
-   3. Mezclar o no mezclar. *Duck typing* y lo que no se debe hacer. 
-   3. Casi lo mismo, pero en JavaScript
 5. [Lógica e ilógica](txt/03.logica.md).
 6. [Datos menos simples](txt/04.componiendo.md)
-   1. Funciones
-   1. Combinando datos.
-   2. Trabajando con esos datos.
 4. Lo que el lenguaje no da.
    1. Trabajando con bibliotecas y qué significa.
    2. Algunas bibliotecas interesantes.
@@ -28,3 +19,19 @@ Enseñando pensamiento computacional a partir de python one-liners
 A [Manu](https://github.com/Makova) por
 correcciones y a [José Manuel Colella](https://github.com/josecolella) por varias aportaciones.  A [Jesús Leganés](https://github.com/piranna) por
 consejos y revisiones. 
+
+## Para generar el libro
+
+```
+cd txt
+../md2pdf
+```
+
+## Licencia
+
+![cc-by-sa](https://i.creativecommons.org/l/by-sa/3.0/es/88x31.png)
+
+Este libro tiene
+licencia
+[`cc-by-sa`](https://creativecommons.org/licenses/by-sa/3.0/es/), y el
+código incluido en él [GPL](LICENSE).
