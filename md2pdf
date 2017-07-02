@@ -7,7 +7,7 @@ pandoc -V language=spanish -V lang=spanish \
     -V documentclass=book\
     -S --latex-engine=xelatex  \
     -o aprende-python.pdf \
-    01.empezar.md  02.datos.md 03.logica.md 04.componiendo.md 05.identificando.md --toc
+    01.empezar.md  02.datos.md 03.logica.md 04.componiendo.md 05.identificando.md 06.sinpilas.md --toc
 
 
 
