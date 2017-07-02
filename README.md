@@ -7,10 +7,11 @@ Enseñando pensamiento computacional a partir de python one-liners
 ## Una estructura (que seguramente cambiará)
 
 1. [Para empezar a trabajar](txt/01.empezar.md).
-1. [Tipos de datos básicos y cómo trabajar con ellos.](txt/02.datos.md)
-5. [Lógica e ilógica](txt/03.logica.md).
-6. [Datos menos simples](txt/04.componiendo.md)
-4. Lo que el lenguaje no da.
+2. [Tipos de datos básicos y cómo trabajar con ellos.](txt/02.datos.md)
+3. [Lógica e ilógica](txt/03.logica.md).
+4. [Datos menos simples](txt/04.componiendo.md)
+5. [Almacenando valores](txt/05.identificando.md)
+6. [Lo que el lenguaje no da](txt/06.sinpilas.md)
    1. Trabajando con bibliotecas y qué significa.
    2. Algunas bibliotecas interesantes.
 
