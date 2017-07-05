@@ -2,7 +2,8 @@
 
 [![Build Status](https://travis-ci.org/JJ/1line-py.svg?branch=master)](https://travis-ci.org/JJ/1line-py)
 
-Enseñando pensamiento computacional a partir de python one-liners
+Enseñando pensamiento computacional a partir de python
+*one-liners*. Presentación con ejemplos [aquí](http://jj.github.io/preso).
 
 ## Una estructura (que seguramente cambiará)
 
@@ -12,8 +13,6 @@ Enseñando pensamiento computacional a partir de python one-liners
 4. [Datos menos simples](txt/04.componiendo.md)
 5. [Almacenando valores](txt/05.identificando.md)
 6. [Lo que el lenguaje no da](txt/06.sinpilas.md)
-   1. Trabajando con bibliotecas y qué significa.
-   2. Algunas bibliotecas interesantes.
 
 ## Sugerencias y correcciones
 
