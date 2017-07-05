@@ -119,6 +119,15 @@ True
 45
 </code></pre></section>
 
+<section data-markdown>
+	<textarea data-template>## Ejercicio
+> Se dice que una fórmula es ["satisfacible"](https://es.wikipedia.org/wiki/Problema_de_satisfacibilidad_booleana) si es
+>verdadera al menos para una combinación de valores. Con una fórmula
+>de 3 variables, ¿cuantas combinaciones posibles de valores hay?
+>Diseña una fórmula y pruébala sistemáticamente hasta que encuentres
+>si es satisfacible o no. Altérala y vuelve a probar.</textarea>
+</section>
+
 <section><pre><code>3 < 3.5
 True
 </code></pre></section>
@@ -137,11 +146,25 @@ True
 False
 </code></pre></section>
 
+<section> data-markdown>
+	<textarea data-template>## Ejercicio
+> Escribe una expresión
+>que sea cierta (es decir, sea `True`) si un número está en un
+>intervalo comprendido entre dos números naturales.</textarea>
+</section>
+
 <section><pre><code>"pepe" == "pepe"
 True
 1 == 0
 False
 </code></pre></section>
+
+<section data-markdown>
+	<textarea data-template>## Ejercicio
+> Usando sólo los símbolos de mayor y menor y operadores
+> lógicos (`and` y `or`), construir
+> una expresión que sea equivalente a `!=`. Probar con diferentes
+> valores que efectivamente es así. </textarea></section>
 
 <section><pre><code>3 <= 3
 True
@@ -423,14 +446,19 @@ reduce( cuenta_pares, aleatorios, [0,0])
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+		 Reveal.initialize({
+		   backgroundTransition: 'zoom',
+		   transition: 'concave',
+		   width: '95%',
+		   slideNumber: true,
+		   history: true,
+		   dependencies: [
+		     { src: 'plugin/markdown/marked.js' },
+		     { src: 'plugin/markdown/markdown.js' },
+		     { src: 'plugin/notes/notes.js', async: true },
+		     { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
-			});
+		 });
 		</script>
 	</body>
 </html>
