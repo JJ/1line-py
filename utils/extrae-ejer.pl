@@ -13,7 +13,7 @@ for my $file (@mds) {
 
   my $contenido = read_text $file;
   
-  my @ejemplos = ( $contenido =~ /```(.+?)```/s );
+  my @ejemplos = ( $contenido =~ /```(.+?)```/sg );
 
   say join("\n",map("<section><pre><code>$_</code></pre></section>\n",@ejemplos));
 
