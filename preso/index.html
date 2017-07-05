@@ -34,7 +34,7 @@ $ [sudo] pip install virtualenv
 apm install Repl
 </code></pre></section>
 
-<section><pre><code>python
+<section><pre><code>
 >>> type(3)
 type(3)
 <class 'int'>
@@ -43,13 +43,13 @@ type(5.2)
 <class 'float'>
 </code></pre></section>
 
-<section><pre><code>python
+<section><pre><code>
 >>> 800//33
 800//33
 24
 </code></pre></section>
 
-<section><pre><code>python
+<section><pre><code>
 >>> type(800/20)
 type(800/20)
 <class 'float'>
@@ -64,7 +64,7 @@ type(800//20)
 40
 </code></pre></section>
 
-<section><pre><code>python
+<section><pre><code>
 >>> type(333)
 type(333)
 <class 'int'>
@@ -73,23 +73,23 @@ type(333.)
 <class 'float'>
 </code></pre></section>
 
-<section><pre><code>python
+<section><pre><code>
 >>> 5*(3**2 + 2**3)
 5*(3**2 + 2**3)
 85
 </code></pre></section>
 
-<section><pre><code>python
+<section><pre><code>
 5*3**2 + 2**3
 </code></pre></section>
 
-<section><pre><code>python
+<section><pre><code>
 >>> len(_)
 len(_)
 17
 </code></pre></section>
 
-<section><pre><code>python
+<section><pre><code>
 >>> _[0:3]
 _[0:3]
 'þor'
@@ -98,42 +98,42 @@ _ + " y Loki el mentiroso ❄"
 'þor y Loki el mentiroso ❄'
 </code></pre></section>
 
-<section><pre><code>python
+<section><pre><code>
 TypeError: unsupported operand type(s) for +: 'int' and 'str'
 </code></pre></section>
 
-<section><pre><code>python
+<section><pre><code>
 >>> type(True)
 type(True)
 <class 'bool'>
 </code></pre></section>
 
-<section><pre><code>python
+<section><pre><code>
 not(3)
 False
 </code></pre></section>
 
-<section><pre><code>python
+<section><pre><code>
 not(None)
 True
 </code></pre></section>
 
-<section><pre><code>python
+<section><pre><code>
 3 and ""
 ''
 </code></pre></section>
 
-<section><pre><code>python
+<section><pre><code>
 3.5 and "happy"
 'happy'
 </code></pre></section>
 
-<section><pre><code>python
+<section><pre><code>
 "" and 3
 ''
 </code></pre></section>
 
-<section><pre><code>python
+<section><pre><code>
 [] or 45
 45
 </code></pre></section>
@@ -177,11 +177,8 @@ not True
 False
 </code></pre></section>
 
-<section><pre><code>Ruby
-! true
-</code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 >>> 3+0.1j
 3+0.1j
 (3+0.1j)
@@ -190,12 +187,7 @@ _**2
 (8.99+0.6000000000000001j)
 </code></pre></section>
 
-<section><pre><code>Ruby
- :002 > (3+4i)*(5+0.1i)
- => (14.6+20.3i) 
-</code></pre></section>
-
-<section><pre><code>Python
+<section><pre><code>
 >>>1+3.14j 
 
 >>> _*(1+3.14j)
@@ -241,48 +233,34 @@ _*(1+3.14j)
 20
 </code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 (lambda dato: dato*dato)(3+4j)
 (-7+24j)
 </code></pre></section>
 
-<section><pre><code>Ruby
-( -> ( dato ) { dato* dato }).call( 3+0.1i )
- => (8.99+0.6000000000000001i)
-</code></pre></section>
-
-<section><pre><code>Clojure
-user=> ((fn [zipi zape] (str zipi " " zape)) "þor" "es poderoso")
-"þor es poderoso"
-</code></pre></section>
-
-<section><pre><code>Python
+<section><pre><code>
 ["A1", 4+5j, lambda dato: dato*dato ]
 ['A1', (4+5j), <function <lambda> at 0x7fb4cb278a60>]
 </code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 ["A1", 4+5j, lambda dato: dato*dato ].pop()
 <function <lambda> at 0x7fb4cb278a60>
 </code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 ["A1", 4+5j, lambda dato: dato*dato ][1]
 (4+5j)
 </code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 ["A1", 4+5j, lambda dato: dato*dato ][0:2]
 ['A1', (4+5j)]
 </code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 ("A1", 4+5j, lambda dato: dato*dato )
 ('A1', (4+5j), <function <lambda> at 0x7faa8da8ee18>)
-</code></pre></section>
-
-<section><pre><code>Clojure
-'("A1" 3 (fn [dato] (dato*dato)))
 </code></pre></section>
 
 <section><pre><code>
@@ -290,18 +268,18 @@ list(range(10))
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 </code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 list(filter( lambda by11: by11//11 == by11/11, range(100) ))
 [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
 </code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 list(map( lambda num: num*"●", [3,15,2,7,33]))
 ['●●●', '●●●●●●●●●●●●●●●', '●●', '●●●●●●●',
 '●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●']
 </code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 list(map(len,['●●●', '●●●●●●●●●●●●●●●', '●●', '●●●●●●●', '●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●'])
 [3, 15, 2, 7, 33]
 </code></pre></section>
@@ -311,36 +289,36 @@ map (\rep -> concat $ replicate rep "#") [3,2,1]
 ["###","##","#"]
 </code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 cifras_de = lambda numero: len(str(numero))
 potencias_de_2 = map( lambda num: 2**num, range(20))
 list(map( cifras_de, potencias_de_2 ))
 </code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 type(potencias_de_2)
-<class 'map'>
+&lt;class 'map'>
 </code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 potencias_de_2=(2,4,8,16,32)
 type(potencias_de_2)
 <class 'tuple'>
 </code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 potencias_de_2.insert(64)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 AttributeError: 'tuple' object has no attribute 'insert'
 </code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 potencias_de_2 = list( potencias_de_2)
 potencias_de_2.insert(len(potencias_de_2),64)
 </code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 potencias_de_2
 [2, 4, 8, 16, 32, 64]
 </code></pre></section>
@@ -353,7 +331,7 @@ python -c "print(list(map(lambda n: n/2 == n//2, range(1000))))"
 python -c "print('\n'.join(map(lambda n: str( n/2 == n//2 ), range(1000))))"
 </code></pre></section>
 
-<section><pre><code>bash
+<section><pre><code>
 python -c "es_par = lambda n: str(n/2 == n//2);print('\n'.join(map(es_par, range(1000))))"
 </code></pre></section>
 
@@ -366,30 +344,30 @@ range(1000))))"
 100000000 loops, best of 3: 0.00571 usec per loop
 </code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 from timeit import timeit
 </code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 timeit(setup="map(lambda n: str( n/2 == n//2 ), range(1000))")
 0.006306399000095553
 timeit(setup="es_par = lambda n: str(n/2 == n//2);map(es_par, range(1000))")
 0.006795324999984587
 </code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 timeit(setup="es_par = lambda n: str(n/2 == n//2);map(es_par, range(10000))")
 0.006140023999250843
 timeit(setup="map(lambda n: str( n/2 == n//2 ), range(10000))")
 0.008905056998628424
 </code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 timeit(setup="es_par = lambda n: str(n^1 == 0);map(es_par, range(10000))")
 0.006006274999890593
 </code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 >>> fibonacci = [1,1,2,3]
 fibonacci = [1,1,2,3]
 >>> fibonacci.append(5)
@@ -402,31 +380,27 @@ fibonacci
 [1, 1, 2, 3]
 </code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 suma_cifras = lambda n:  sum(map(int,list(str(n))))
 def is_multiple_of_3(n): sum = suma_cifras(n); return is_multiple_of_3(sum) if (sum >= 10) else (True  if (sum==3) or (sum==9) else False)
 </code></pre></section>
 
-<section><pre><code>Groovy
-def fib(n) {n<2 ? 1 : fib(n-1)+fib(n-2)}
-</code></pre></section>
-
-<section><pre><code>Python
+<section><pre><code>
 juego = { 'jugador'   :'Johnny', 
          'mano'      : ['5♠','Q♣','8♥'], 
 		 'estrategia': lambda mano: min(mano) } 
 </code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 juego.items()
 dict_items([('jugador', 'Johnny'), ('mano', ['5♠', 'Q♣', '8♥']), ('estrategia', <function <lambda> at 0x7fcd3e298a60>)])
 </code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 def juega( mano ): return mano['estrategia'](mano['mano'])
 </code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 from random import random
 juego_ricky = { 'jugador'   :'Ricky', 
 	            'mano'      : ['3♠','4♣','A♥'], 
@@ -436,27 +410,23 @@ juega(juego_ricky)
 '3♠'
 </code></pre></section>
 
-<section><pre><code>PowerShell
-$juego_ricky = @{ "jugador" ="Ricky"; "mano" = @("3♠","4♣","A♥")} 
-$juego_ricky
-</code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 mano_ricky= set( ['3♠','4♣','A♥'] )
 </code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 '3♠' in mano_ricky
 True
 </code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 mano_johnny= set( ['7♣', '7♥', '7♦'] )
 mano_johnny.intersection(mano_ricky)
 set()
 </code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 mano_johnny - {'7♥'}
 {'7♥', '7♣'}
 </code></pre></section>
@@ -486,42 +456,33 @@ pip3 install --user bpython
 export PATH=$PATH:~/.local/bin
 </code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 list(zip(sorted(['3♠','4♣','A♥']),sorted(['7♣', '7♥', '7♦'])))
 [('3♠', '7♣'), ('4♣', '7♥'), ('A♥', '7♦')]
 </code></pre></section>
 
-<section><pre><code>Perl6
-sort ['3♠','4♣','A♥'] Z sort ['7♣', '7♥', '7♦']
-((3♠ 7♣) (4♣ 7♥) (A♥ 7♦))
-</code></pre></section>
-
-<section><pre><code>Python
+<section><pre><code>
 from functools import reduce
 def fact(n): return reduce( lambda prev,this: prev*this, range(1,n+1),1)
 </code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 def fib(n): return reduce( lambda prev,this: prev+ [prev[-2]+prev[-1]], rang
 e(1,n+1), [1,1])
 fib(12)
 [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377]
 </code></pre></section>
 
-<section><pre><code>JavaScript
-[3,2,1].reduce( function(prev,este){ return este*prev; } )
-</code></pre></section>
-
-<section><pre><code>Python
+<section><pre><code>
 [Fraction(1,n) for n in range(1,100) if n % 2]
 </code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 [str(valor)+card for card in ["♠","♣","♥","♦"] 
     for valor in ['A','J','Q','K',2,3,4,5,6,7,8,9,10]]
 </code></pre></section>
 
-<section><pre><code>Python
+<section><pre><code>
 from random import random
 aleatorios = [int(random()*10000) for _ in range(10000)]
 def cuenta_pares( prev, this ): prev[this&1 ] += 1; return prev;
