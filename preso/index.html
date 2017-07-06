@@ -523,15 +523,42 @@ mano_johnny = mano_johnny | { choice(baraja) }
 [('3♠', '7♣'), ('4♣', '7♥'), ('A♥', '7♦')]
 </code></pre></section>
 
+<section data-markdown>
+	<textarea data-template>
+		## Ejercicio
+
+>crear una serie de fracciones, desde 1/3 hasta 1/99 y
+> hallar su suma. </textarea></section>
+
 <section><pre><code>from functools import reduce
 def fact(n): return reduce( lambda prev,this: prev*this, range(1,n+1),1)
 </code></pre></section>
+
+<section data-markdown>
+	<textarea data-template>
+		## Ejercicio
+
+> Programar una función de Mandelbrot, usando números
+> complejos, de la misma forma. </textarea></section>
+
 
 <section><pre><code>def fib(n): return reduce( lambda prev,this: prev+ [prev[-2]+prev[-1]], rang
 e(1,n+1), [1,1])
 fib(12)
 [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377]
 </code></pre></section>
+
+<section data-markdown>
+	<textarea data-template>
+		## Ejercicio
+
+> una generalización de las sucesiones de Fibonacci son
+>las
+>[sucesiones de Lucas](https://en.wikipedia.org/wiki/Generalizations_of_Fibonacci_numbers),
+>que usan números arbitrarios como los números iniciales y que también
+>multiplican los términos anteriores por números naturales. Programar
+>la función `lucas` que genere estas sucesiones, y definir la función
+>de Fibonacci como un caso particular de la misma.  </textarea></section>
 
 <section><pre><code>[Fraction(1,n) for n in range(1,100) if n % 2]
 </code></pre></section>
@@ -540,6 +567,15 @@ fib(12)
     for valor in ['A','J','Q','K',2,3,4,5,6,7,8,9,10]]
 </code></pre></section>
 
+<section data-markdown>
+	<textarea data-template>
+		## Ejercicio
+
+> para una urbanización con 4 bloques, 3 plantas por
+> bloque, dos pisos por planta, A y B, generar todos los posibles
+> pisos que hay en la forma que se considere más conveniente.</textarea></section>
+
+
 <section><pre><code>from random import random
 aleatorios = [int(random()*10000) for _ in range(10000)]
 def cuenta_pares( prev, this ): prev[this&1 ] += 1; return prev;
@@ -547,6 +583,14 @@ from functools import reduce
 reduce( cuenta_pares, aleatorios, [0,0])
 </code></pre></section>
 
+<section data-markdown>
+	<textarea data-template>
+		## Ejercicio
+
+>Si habéis ejecutado el generador de números aleatorios
+> de arriba, habréis visto que rara vez el resultado es exactamente la
+> mitad de cada uno. ¿Cuanta desviación hay? Realizar una función que
+> contabilice la desviación del generador de números aleatorios. </textarea></section>
 
 			</div>
 		</div>
