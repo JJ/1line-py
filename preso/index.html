@@ -395,20 +395,28 @@ timeit(setup="map(lambda n: str( n/2 == n//2 ), range(10000))")
 0.006006274999890593
 </code></pre></section>
 
-<section><pre><code>>>> fibonacci = [1,1,2,3]
+<section>
+  <section><pre><code>>>> fibonacci = [1,1,2,3]
 fibonacci = [1,1,2,3]
 >>> fibonacci.append(5)
-fibonacci.append(5)
->>> fibonacci.pop()
+fibonacci.append(5)</code></pre>
+  </section>
+<section><pre><code>>>> fibonacci.pop()
 fibonacci.pop()
 5
 >>> fibonacci
 fibonacci
 [1, 1, 2, 3]
 </code></pre></section>
-
+  </section>
+  
 <section><pre><code>suma_cifras = lambda n:  sum(map(int,list(str(n))))
-def is_multiple_of_3(n): sum = suma_cifras(n); return is_multiple_of_3(sum) if (sum >= 10) else (True  if (sum==3) or (sum==9) else False)
+def is_multiple_of_3(n): sum = suma_cifras(n)
+      return is_multiple_of_3(sum)
+          if (sum >= 10)
+          else
+              (True
+              if (sum==3) or (sum==9) else False)
 </code></pre></section>
 
 <section>
@@ -437,9 +445,9 @@ def is_multiple_of_3(n): sum = suma_cifras(n); return is_multiple_of_3(sum) if (
 
 <section data-markdown>
   <textarea data-template>## Ejercicio
-> Subir a [http://gist.github.com] alguno de los ejercicios creados
+> Subir a http://gist.github.com alguno de los ejercicios creados
 >anteriormente, usando comentarios para explicarlo. Difundirlo también
->por Twitter, con la etiqueta #1linepy, enlazándolo.
+>por Twitter, con la etiqueta #1linepy, enlazándolo.</textarea></section>
 
 <section data-markdown>
   <textarea data-template>## Ejercicio
@@ -449,9 +457,9 @@ def is_multiple_of_3(n): sum = suma_cifras(n); return is_multiple_of_3(sum) if (
 >con un enlace y explicación en el `README.md` creado. Una vez más,
 >difundir por Twitter con `#1linepy`</textarea></section>
 
-    <section><pre><code>juego = { 'jugador'   :'Johnny', 
-         'mano'      : ['5♠','Q♣','8♥'], 
-		 'estrategia': lambda mano: min(mano) } 
+<section><pre><code>juego = { 'jugador'   :'Johnny',
+      'mano'      : ['5♠','Q♣','8♥'],
+      'estrategia': lambda mano: min(mano) } 
 </code></pre></section>
 
 
@@ -465,8 +473,8 @@ dict_items([('jugador', 'Johnny'), ('mano', ['5♠', 'Q♣', '8♥']), ('estrate
 
 <section><pre><code>from random import random
 juego_ricky = { 'jugador'   :'Ricky', 
-	            'mano'      : ['3♠','4♣','A♥'], 
-				'estrategia': lambda mano: mano[int(random()*len(mano))] }
+	        'mano'      : ['3♠','4♣','A♥'], 
+		'estrategia': lambda mano: mano[int(random()*len(mano))] }
 				
 juega(juego_ricky)
 '3♠'
@@ -521,9 +529,6 @@ mano_johnny = mano_johnny | { choice(baraja) }
 <section><pre><code>pip3 install --user bpython
 </code></pre></section>
 
-<section><pre><code>export PATH=$PATH:~/.local/bin
-</code></pre></section>
-
 <section><pre><code>list(zip(sorted(['3♠','4♣','A♥']),sorted(['7♣', '7♥', '7♦'])))
 [('3♠', '7♣'), ('4♣', '7♥'), ('A♥', '7♦')]
 </code></pre></section>
@@ -547,8 +552,10 @@ def fact(n): return reduce( lambda prev,this: prev*this, range(1,n+1),1)
 > complejos, de la misma forma. </textarea></section>
 
 
-<section><pre><code>def fib(n): return reduce( lambda prev,this: prev+ [prev[-2]+prev[-1]], rang
-e(1,n+1), [1,1])
+<section><pre><code>def fib(n):
+      return reduce( lambda prev,this: prev + [prev[-2]+prev[-1]],
+                      range(1,n+1), [1,1])
+      
 fib(12)
 [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377]
 </code></pre></section>
@@ -559,13 +566,14 @@ fib(12)
 
 > una generalización de las sucesiones de Fibonacci son
 >las
->[sucesiones de Lucas](https://en.wikipedia.org/wiki/Generalizations_of_Fibonacci_numbers),
+>[de Lucas](https://en.wikipedia.org/wiki/Generalizations_of_Fibonacci_numbers),
 >que usan números arbitrarios como los números iniciales y que también
->multiplican los términos anteriores por números naturales. Programar
+>multiplican los términos anteriores. Programar
 >la función `lucas` que genere estas sucesiones, y definir la función
 >de Fibonacci como un caso particular de la misma.  </textarea></section>
 
-<section><pre><code>[Fraction(1,n) for n in range(1,100) if n % 2]
+<section><h1>Comprensión de listas: <em>map</em> + <em>filter</em></h1>
+  <pre><code>[Fraction(1,n) for n in range(1,100) if n % 2]
 </code></pre></section>
 
 <section><pre><code>[str(valor)+card for card in ["♠","♣","♥","♦"] 
