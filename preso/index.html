@@ -430,18 +430,26 @@ def is_multiple_of_3(n): sum = suma_cifras(n); return is_multiple_of_3(sum) if (
 > esta forma? </textarea></section>
 </section>
 
-<section><pre><code>juego = { 'jugador'   :'Johnny', 
-         'mano'      : ['5♠','Q♣','8♥'], 
-		 'estrategia': lambda mano: min(mano) } 
-</code></pre></section>
+<section data-markdown>
+  <textarea data-template>## Ejercicio
+> Subir a [http://gist.github.com] alguno de los ejercicios creados
+>anteriormente, usando comentarios para explicarlo. Difundirlo también
+>por Twitter, con la etiqueta #1linepy, enlazándolo.
 
 <section data-markdown>
   <textarea data-template>## Ejercicio
 
-> Subir a gist.github.com alguno de los ejercicios creados
->anteriormente, usando comentarios para explicarlo. Difundirlo también
->por Twitter, con la etiqueta #1linepy,
->enlazándolo.</textarea></section>
+>  Alternativamente a los gist, crear un repositorio en
+>GitHub con los ejercicios, cada uno en un fichero correspondiente, y
+>con un enlace y explicación en el `README.md` creado. Una vez más,
+>difundir por Twitter con `#1linepy`</textarea></section>
+
+    <section><pre><code>juego = { 'jugador'   :'Johnny', 
+         'mano'      : ['5♠','Q♣','8♥'], 
+		 'estrategia': lambda mano: min(mano) } 
+</code></pre></section>
+
+
 
 <section><pre><code>juego.items()
 dict_items([('jugador', 'Johnny'), ('mano', ['5♠', 'Q♣', '8♥']), ('estrategia', <function <lambda> at 0x7fcd3e298a60>)])
@@ -459,6 +467,15 @@ juega(juego_ricky)
 '3♠'
 </code></pre></section>
 
+<section data-markdown>
+	<textarea data-template>
+		## Ejercicio
+>  diseñar una estructura de datos para sucesiones
+> matemáticas que contenga el nombre de la sucesión, el elemento
+> inicial, y la función para calcular el siguiente elemento. Diseñar
+> también una función que efectivamente calcule el siguiente elemento
+> a partir del valor inicial. </textarea></section>
+
 
 <section><pre><code>mano_ricky= set( ['3♠','4♣','A♥'] )
 </code></pre></section>
@@ -466,6 +483,13 @@ juega(juego_ricky)
 <section><pre><code>'3♠' in mano_ricky
 True
 </code></pre></section>
+
+<section data-markdown>
+	<textarea data-template>
+		## Ejercicio
+
+>generar una baraja de cartas y una función que extraiga
+> una mano de 3 cartas de ella. </textarea></section>
 
 <section><pre><code>mano_johnny= set( ['7♣', '7♥', '7♦'] )
 mano_johnny.intersection(mano_ricky)
