@@ -321,6 +321,16 @@ potencias_de_2 = map( lambda num: 2**num, range(20))
 list(map( cifras_de, potencias_de_2 ))
 </code></pre></section>
 
+<section data-markdown>
+  <textarea data-template>## Ejercicios
+
+> Calcular los múltiplos de 3 entre los 100 primeros
+> números naturales. ¿Qué tipo de estructura de datos podemos usar?
+> ¿Cómo se averigua, con un test simple, si es un múltiplo de tres?
+> ¿Se puede modificar la secuencia de operaciones anterior para
+> detectar múltiplos de 9?</textarea></section>
+
+
 <section><pre><code>type(potencias_de_2)
 &lt;class 'map'>
 </code></pre></section>
@@ -395,6 +405,30 @@ fibonacci
 <section><pre><code>suma_cifras = lambda n:  sum(map(int,list(str(n))))
 def is_multiple_of_3(n): sum = suma_cifras(n); return is_multiple_of_3(sum) if (sum >= 10) else (True  if (sum==3) or (sum==9) else False)
 </code></pre></section>
+
+<section>
+  <section data-markdown>
+    <textarea data-template>## Ejercicios
+
+> Usar una función recursiva para calcular el factorial
+> de un número. ¿Habría alguna otra forma de hacerlo? ¿Cuál es más
+> rápida para números pequeños? ¿Y para números más
+> grandotes?</textarea></section>
+
+  <section><h1>Sucesión marchosa</h1>
+
+    <pre><code>def fib(n) {n<2 ? 1 : fib(n-1)+fib(n-2)}</code></pre>
+
+    <aside class='notes'>Está en Groovy, pero la idea es compacta y
+      está más o menos clara.</aside><
+    /section>
+
+  <section data-markdown>
+    <textarea data-template>## Ejercicio
+> Calcular los 20 primeros elementos de la sucesión de
+> Fibonacci. ¿Hasta que número es más o menos razonable hacerlo de
+> esta forma? </textarea></section>
+</section>
 
 <section><pre><code>juego = { 'jugador'   :'Johnny', 
          'mano'      : ['5♠','Q♣','8♥'], 
