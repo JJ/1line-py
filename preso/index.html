@@ -576,7 +576,9 @@ fib(12)
 > pisos que hay en la forma que se considere más conveniente.</textarea></section>
 
 
-<section><pre><code>from random import random
+<section><h1>Aplicando y reduciendo</h1>
+
+  <pre><code>from random import random
 aleatorios = [int(random()*10000) for _ in range(10000)]
 def cuenta_pares( prev, this ): prev[this&1 ] += 1; return prev;
 from functools import reduce
