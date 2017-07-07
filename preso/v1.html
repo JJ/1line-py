@@ -263,16 +263,22 @@ _*(1+3.14j)
 40
 </code></pre></section>
 
+<section data-markdown>
+  <textarea data-template>## Ejercicio
+
+>Usando `xor`, comprobar si dos números enteros tienen el
+> mismo signo. </textarea></section>
+
 <section><pre><code>(lambda dato: dato*dato)(3+4j)
 (-7+24j)
 </code></pre></section>
 
 <section><pre><code>["A1", 4+5j, lambda dato: dato*dato ]
-['A1', (4+5j), &lt;function &lt;lambda> at 0x7fb4cb278a60>]
+['A1', (4+5j), <function <lambda> at 0x7fb4cb278a60>]
 </code></pre></section>
 
 <section><pre><code>["A1", 4+5j, lambda dato: dato*dato ].pop()
-&lt;function &lt;lambda> at 0x7fb4cb278a60>
+<function <lambda> at 0x7fb4cb278a60>
 </code></pre></section>
 
 <section><pre><code>["A1", 4+5j, lambda dato: dato*dato ][1]
@@ -310,6 +316,11 @@ _*(1+3.14j)
 [3, 15, 2, 7, 33]
 </code></pre></section>
 
+<section data-markdown>
+  <textarea data-template>## Ejercicio
+>*Representar* de forma gráfica (usando caracteres) el
+> logaritmo de las 20 primeras potencias de dos. </textarea></section>
+
 <section><pre><code>cifras_de = lambda numero: len(str(numero))
 potencias_de_2 = map( lambda num: 2**num, range(20))
 list(map( cifras_de, potencias_de_2 ))
@@ -346,6 +357,42 @@ potencias_de_2.insert(len(potencias_de_2),64)
 
 <section><pre><code>potencias_de_2
 [2, 4, 8, 16, 32, 64]
+</code></pre></section>
+
+<section><pre><code>bash
+python -c "print(list(map(lambda n: n/2 == n//2, range(1000))))"
+</code></pre></section>
+
+<section><pre><code>python -c "print('\n'.join(map(lambda n: str( n/2 == n//2 ), range(1000))))"
+</code></pre></section>
+
+<section><pre><code>python -c "es_par = lambda n: str(n/2 == n//2);print('\n'.join(map(es_par, range(1000))))"
+</code></pre></section>
+
+<section><pre><code>python -m timeit -s "print('\n'.join(map(lambda n: str( n/2 == n//2 ),
+range(1000))))"
+</code></pre></section>
+
+<section><pre><code>100000000 loops, best of 3: 0.00571 usec per loop
+</code></pre></section>
+
+<section><pre><code>from timeit import timeit
+</code></pre></section>
+
+<section><pre><code>timeit(setup="map(lambda n: str( n/2 == n//2 ), range(1000))")
+0.006306399000095553
+timeit(setup="es_par = lambda n: str(n/2 == n//2);map(es_par, range(1000))")
+0.006795324999984587
+</code></pre></section>
+
+<section><pre><code>timeit(setup="es_par = lambda n: str(n/2 == n//2);map(es_par, range(10000))")
+0.006140023999250843
+timeit(setup="map(lambda n: str( n/2 == n//2 ), range(10000))")
+0.008905056998628424
+</code></pre></section>
+
+<section><pre><code>timeit(setup="es_par = lambda n: str(n^1 == 0);map(es_par, range(10000))")
+0.006006274999890593
 </code></pre></section>
 
 <section>
@@ -396,10 +443,26 @@ def is_multiple_of_3(n): sum = suma_cifras(n)
 > esta forma? </textarea></section>
 </section>
 
+<section data-markdown>
+  <textarea data-template>## Ejercicio
+> Subir a http://gist.github.com alguno de los ejercicios creados
+>anteriormente, usando comentarios para explicarlo. Difundirlo también
+>por Twitter, con la etiqueta #1linepy, enlazándolo.</textarea></section>
+
+<section data-markdown>
+  <textarea data-template>## Ejercicio
+
+>  Alternativamente a los gist, crear un repositorio en
+>GitHub con los ejercicios, cada uno en un fichero correspondiente, y
+>con un enlace y explicación en el `README.md` creado. Una vez más,
+>difundir por Twitter con `#1linepy`</textarea></section>
+
 <section><pre><code>juego = { 'jugador'   :'Johnny',
       'mano'      : ['5♠','Q♣','8♥'],
       'estrategia': lambda mano: min(mano) } 
 </code></pre></section>
+
+
 
 <section><pre><code>juego.items()
 dict_items([('jugador', 'Johnny'), ('mano', ['5♠', 'Q♣', '8♥']), ('estrategia', <function <lambda> at 0x7fcd3e298a60>)])
@@ -457,6 +520,15 @@ mano_johnny = mano_johnny | { choice(baraja) }
 <section><pre><code>mano_johnny = mano_johnny | { baraja.pop() }
 </code></pre></section>
 
+<section><pre><code>pip3 install bpython
+</code></pre></section>
+
+<section><pre><code>sudo pip3 install bpython
+</code></pre></section>
+
+<section><pre><code>pip3 install --user bpython
+</code></pre></section>
+
 <section><pre><code>list(zip(sorted(['3♠','4♣','A♥']),sorted(['7♣', '7♥', '7♦'])))
 [('3♠', '7♣'), ('4♣', '7♥'), ('A♥', '7♦')]
 </code></pre></section>
@@ -472,6 +544,14 @@ mano_johnny = mano_johnny | { choice(baraja) }
 def fact(n): return reduce( lambda prev,this: prev*this, range(1,n+1),1)
 </code></pre></section>
 
+<section data-markdown>
+	<textarea data-template>
+		## Ejercicio
+
+> Programar una función de Mandelbrot, usando números
+> complejos, de la misma forma. </textarea></section>
+
+
 <section><pre><code>def fib(n):
       return reduce( lambda prev,this: prev + [prev[-2]+prev[-1]],
                       range(1,n+1), [1,1])
@@ -479,6 +559,18 @@ def fact(n): return reduce( lambda prev,this: prev*this, range(1,n+1),1)
 fib(12)
 [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377]
 </code></pre></section>
+
+<section data-markdown>
+	<textarea data-template>
+		## Ejercicio
+
+> una generalización de las sucesiones de Fibonacci son
+>las
+>[de Lucas](https://en.wikipedia.org/wiki/Generalizations_of_Fibonacci_numbers),
+>que usan números arbitrarios como los números iniciales y que también
+>multiplican los términos anteriores. Programar
+>la función `lucas` que genere estas sucesiones, y definir la función
+>de Fibonacci como un caso particular de la misma.  </textarea></section>
 
 <section><h1>Comprensión de listas: <em>map</em> + <em>filter</em></h1>
   <pre><code>[Fraction(1,n) for n in range(1,100) if n % 2]
