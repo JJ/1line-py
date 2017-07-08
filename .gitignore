@@ -105,3 +105,6 @@ ENV/
 
 # PDF
 *.pdf
+
+*.docx
+*.epub
