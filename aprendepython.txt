@@ -1,4 +1,4 @@
-# Aprende Python como si estuvieras en el siglo XXI
+# Aprende a programar en Python como si estuvieras en el siglo XXI
 ## Pensamiento computacional a través de la programación funcional usando Python.
 
 By [**JJ Merelo**](http://jj.github.io)
