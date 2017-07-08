@@ -1,12 +1,13 @@
 #!/bin/bash
 
 mkdir -p html # It creates the directory if it does not exist
-cp ../aprendegit.css html
+cp ../aprendepython.css html
+rm aprendepython.html
 for fichero in $( ls *.md)
 do
     #echo ${fichero}
-    pandoc -f markdown -s -t html -c aprendegit.css -o html/${fichero} ${fichero} 
-    mv "html/$fichero" "html/${fichero%.md}.html"
+    pandoc -f markdown -s -t html -c aprendepython.css -o html/${fichero} ${fichero} 
+    cat "html/$fichero" >> aprendepython.html
 done
 
 sed -i '1{
@@ -19,5 +20,5 @@ sed -i '1{
     G
     }' html/*.html
 
-sed -i 's/<img src="img/<img src="http:\/\/campusvirtual.ugr.es\/moodle\/file.php\/1850\/img/g' html/*.html
+# sed -i 's/<img src="img/<img src="http:\/\/campusvirtual.ugr.es\/moodle\/file.php\/1850\/img/g' html/*.html
 
