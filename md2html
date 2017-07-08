@@ -20,5 +20,5 @@ sed -i '1{
     G
     }' html/*.html
 
-# sed -i 's/<img src="img/<img src="http:\/\/campusvirtual.ugr.es\/moodle\/file.php\/1850\/img/g' html/*.html
+sed -i 's/..\/img/img/g' html/*.html
 
