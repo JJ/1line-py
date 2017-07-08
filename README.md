@@ -26,8 +26,12 @@ y seguir trabajando con él.
 ## Agradecimientos
 
 A [Manu](https://github.com/Makova) por
-correcciones y a [José Manuel Colella](https://github.com/josecolella) por varias aportaciones.  A [Jesús Leganés](https://github.com/piranna) por
-consejos y revisiones. 
+correcciones y a [José Manuel Colella](https://github.com/josecolella)
+por varias aportaciones.
+A [Jesús Leganés](https://github.com/piranna) por
+consejos y revisiones,
+a [Gregorio Robles](https://github.com/gregoriorobles) por una extensa
+revisión y consejos para transformar este material en una clase. 
 
 ## Para generar el libro
 
