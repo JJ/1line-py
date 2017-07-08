@@ -2,18 +2,9 @@
 
 
 
-pandoc -S --toc --epub-metadata=metadata.xml --epub-stylesheet=granadaoff.css \
-    -o granadaoff.epub granada.txt  text/prologue.md text/tips.md text/hopscotch.md\
-    text/earthquakes.md text/off-limits.md text/water.md text/snow.md text/barranco-abogado.md\
-    text/holy-not-a-week.md \
-    text/roundabouts.md text/train-station.md text/suburban-malls.md\
-    text/freemasonry.md text/kasbah-teashops.md \
-    text/buskers.md text/whorehouses.md  text/eccentrics-and-oddballs.md \
-    text/danger-castle.md text/haunted.md text/cemetery.md\
-    text/fast-food.md \
-    text/university.md text/geekery.md\
-    text/graffiti.md \
-    coda.txt
+pandoc -S --toc --epub-metadata=../metadata.xml --epub-stylesheet=../aprendepython.css \
+       -o aprendepython.epub ../aprendepython.txt  01.empezar.md  \
+       02.datos.md 03.logica.md 04.componiendo.md 05.identificando.md 06.sinpilas.md
    
 
 

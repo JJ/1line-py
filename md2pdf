@@ -1,9 +1,8 @@
 #!/bin/bash
 
 # Cambia la plantilla de latex al directorio donde esté
-DIR=`pwd`
 pandoc -V language=spanish -V lang=spanish \
-    -V author='JJ Merelo' -V title='Introducción a Python'\
+    -V author='JJ Merelo' -V title='Aprende Python como si estuvieras en el siglo XXI'\
     -V documentclass=book\
     -S --latex-engine=xelatex  \
     -o aprende-python.pdf \
