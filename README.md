@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/JJ/1line-py.svg?branch=master)](https://travis-ci.org/JJ/1line-py)
 
 Enseñando pensamiento computacional a partir de python
-*one-liners*. Presentación con ejemplos [aquí](http://jj.github.io/preso).
+*one-liners*. Presentación con ejemplos [aquí](preso/).
 
 ## Una estructura (que seguramente cambiará)
 
