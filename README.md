@@ -47,8 +47,11 @@ revisión y consejos para transformar este material en una clase.
 ```
 cd txt
 ../md2pdf
+../md2docx
 ```
-Necesitarás [pandoc](http://pandoc.org).
+
+Necesitarás tener instalado [pandoc](http://pandoc.org) para que
+funcionen los scripts. 
 
 ## Licencia
 
