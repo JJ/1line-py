@@ -48,6 +48,7 @@ revisión y consejos para transformar este material en una clase.
 cd txt
 ../md2pdf
 ```
+Necesitarás [pandoc](http://pandoc.org).
 
 ## Licencia
 
