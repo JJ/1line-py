@@ -2,6 +2,15 @@
 
 [![Build Status](https://travis-ci.org/JJ/1line-py.svg?branch=master)](https://travis-ci.org/JJ/1line-py)
 
+## Cómpralo en Amazon
+
+Compra
+[aprende a programar en Python como si estuvieras en el siglo XXI: Pensamiento computacional a través de la programación funcional usando Python](http://amzn.to/2t1gKt7) por
+menos de un euro. También [en tapa blanda](http://amzn.to/2sCZKu8) por
+un precio bajísimo. 
+
+## De qué va
+
 Enseñando pensamiento computacional a partir de python
 *one-liners*. Presentación con ejemplos [aquí](preso/).
 
