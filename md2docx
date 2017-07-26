@@ -2,5 +2,6 @@
 
 pandoc -s --toc  \
        -o aprendepython.docx ../aprendepython.txt 00.prologo.md 01.empezar.md  \
-       02.datos.md 03.logica.md 04.componiendo.md 05.identificando.md 06.sinpilas.md
+       02.datos.md 03.logica.md 04.componiendo.md 05.identificando.md 06.sinpilas.md \
+       07.entendiendo.md
    
