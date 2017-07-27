@@ -12,7 +12,12 @@ un precio bajísimo.
 ## De qué va
 
 Enseñando pensamiento computacional a partir de python
-*one-liners*. Presentación con ejemplos [aquí](preso/).
+*one-liners*. Presentación con ejemplos [aquí](preso/). Es una
+introducción muy básica, que no trata de cubrir ni todo el lenguaje ni
+siquiera su sintaxis, sino su filosofía y cómo realizar diferentes
+tareas de tratamiento de datos usándolo. Los ejemplos también comparan
+Python con otros lenguajes, permitiendo ver también cómo la sintaxis
+de unos y otros converge o diverge. 
 
 ## Una estructura (que seguramente cambiará)
 
@@ -46,8 +51,9 @@ revisión y consejos para transformar este material en una clase.
 
 ```
 cd txt
-../md2pdf
-../md2docx
+../md2pdf # PDF
+../md2docx # Procesador de textos
+../md2epub # ePub
 ```
 
 Necesitarás tener instalado [pandoc](http://pandoc.org) para que
