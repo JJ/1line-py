@@ -1,0 +1,14 @@
+['"satisfacible"', 'https://es.wikipedia.org/wiki/Problema_de_satisfacibilidad_booleana']
+{'kind': 'urlshortener#url', 'id': 'https://goo.gl/T3AZSY', 'longUrl': 'https://es.wikipedia.org/wiki/Problema_de_satisfacibilidad_booleana'}
+['operaciones lógicas', 'https://en.wikipedia.org/wiki/Logical_connective']
+{'kind': 'urlshortener#url', 'id': 'https://goo.gl/BWavqc', 'longUrl': 'https://en.wikipedia.org/wiki/Logical_connective'}
+['no es demasiado simple', 'https://stackoverflow.com/questions/1097908/how-do-i-sort-unicode-strings-alphabetically-in-python']
+{'kind': 'urlshortener#url', 'id': 'https://goo.gl/EfHky8', 'longUrl': 'https://stackoverflow.com/questions/1097908/how-do-i-sort-unicode-strings-alphabetically-in-python'}
+['filosofía de Python', 'https://www.python.org/dev/peps/pep-0020/']
+{'kind': 'urlshortener#url', 'id': 'https://goo.gl/K8daJu', 'longUrl': 'https://www.python.org/dev/peps/pep-0020/'}
+['igualdad abstracta e igualdad estricta', 'https://developer.mozilla.org/es/docs/Web/JavaScript/Equality_comparisons_and_sameness']
+{'kind': 'urlshortener#url', 'id': 'https://goo.gl/4zHstH', 'longUrl': 'https://developer.mozilla.org/es/docs/Web/JavaScript/Equality_comparisons_and_sameness'}
+['aquello de', 'https://www.python.org/dev/peps/pep-0020/']
+{'kind': 'urlshortener#url', 'id': 'https://goo.gl/K8daJu', 'longUrl': 'https://www.python.org/dev/peps/pep-0020/'}
+['! en Ruby', '../img/ruby-not.png']
+{'error': {'errors': [{'domain': 'global', 'reason': 'invalid', 'message': 'Invalid Value', 'locationType': 'parameter', 'location': 'resource.longUrl'}], 'code': 400, 'message': 'Invalid Value'}}
