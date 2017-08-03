@@ -10,13 +10,12 @@ if len(sys.argv) > 1:
 else:
     dir = "txt/"
 
-ficheros = glob.glob(dir+"*.md")
+ficheros = glob.glob(dir+"/*.md")
 
 all_links = []
 for f in ficheros:
     file_content = open(f,"r").read()
-    basename = re.search('(\S+)\.md', f)
-    links = re.findall('\[([^\]]+)\]\(([^\(]+)\)',file_content)
+    links = re.findall('\[([^\]]+)\]\((http[^\(]+)\)',file_content)
     for text,link in links:
         all_links.append( [ text, link] )
         
