@@ -1,0 +1,9 @@
+#!/bin/bash
+
+../utils/expande-URLs.py . ../utils/short-links.json
+for f in 00.prologo 01.empezar 02.datos 03.logica 04.componiendo 05.identificando 06.sinpilas 07.entendiendo
+do	 
+    pandoc -s -o $f.docx $f-links.md
+    rm $f-links.md
+done
+   
