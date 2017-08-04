@@ -26,11 +26,9 @@ for u in short_urls:
 ficheros = glob.glob(dir+"/*.md")
 for f in ficheros:
     file_content = open(f,"r").read()
-    re.sub('\[([^\]]+)\]\((http[^\(]+)\)','\1 -> \2', file_content)
+    file_content = re.sub(r'\[([^\]]+)\]\((http[^\(]+)\)',r'\1 → \2', file_content)
     for key in dict_urls:
         file_content = file_content.replace(key, dict_urls[key])
-    print(file_content)
     f = f.replace('.md','-links.md')
-    
-#    with open(f, "w") as links_file:
-#        links_file.write( file_content )
+    with open(f, "w") as links_file:
+        links_file.write( file_content )
