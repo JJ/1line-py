@@ -27,7 +27,8 @@ ficheros = glob.glob(dir+"/*.md")
 for f in ficheros:
     file_content = open(f,"r").read()
     file_content = re.sub(r'\[([^\]]+)\]\((http[^\(]+)\)',r'\1 → \2', file_content)
-    for key in dict_urls:
+
+    for key in sorted(dict_urls,key=len,reverse=True):
         file_content = file_content.replace(key, dict_urls[key])
     f = f.replace('.md','-links.md')
     with open(f, "w") as links_file:
