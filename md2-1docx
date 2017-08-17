@@ -5,6 +5,6 @@ pandoc -s --reference-docx=../utils/plantilla.docx  \
        -o aprendepython-enlaces.docx ../aprendepython.txt 00.prologo-links.md 01.empezar-links.md  \
        02.datos-links.md 03.logica-links.md 04.componiendo-links.md 05.identificando-links.md 06.sinpilas-links.md \
        07.entendiendo-links.md
-rm $f-links.md
+rm *-links.md
 
    
