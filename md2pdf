@@ -1,12 +1,14 @@
 #!/bin/bash
 
 # Cambia la plantilla de latex al directorio donde esté
-pandoc -V language=spanish -V lang=spanish \
+../utils/expande-URLs.py . ../utils/short-links.json
+pandoc --template=/home/jmerelo/Libros/curso-git/utils/plantilla.latex \
+    -V language=spanish -V lang=spanish \
     -V author='JJ Merelo' -V title='Aprende Python como si estuvieras en el siglo XXI'\
     -V documentclass=book\
     -S --latex-engine=xelatex  \
-    -o aprende-python.pdf \
-    01.empezar.md  02.datos.md 03.logica.md 04.componiendo.md 05.identificando.md 06.sinpilas.md --toc
-
+    -o aprende-python-kdp.pdf \
+    01.empezar-links.md  02.datos-links.md 03.logica-links.md 04.componiendo-links.md 05.identificando-links.md 06.sinpilas-links.md --toc
+rm *-links.md
 
 
