@@ -29,8 +29,6 @@ for f in ficheros:
     file_content = re.sub(r'\[([^\]]+)\]\((http[^\(]+)\)',r'\1 → \2', file_content)
 
     for key in sorted(dict_urls,key=len,reverse=True):
-        print( key, dict_urls[key] )
-#        file_content = re.sub(r"\b%s(?!/)" % key, dict_urls[key],file_content)
         file_content = file_content.replace(key, dict_urls[key])
     f = f.replace('.md','-links.md')
     with open(f, "w") as links_file:
