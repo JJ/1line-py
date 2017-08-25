@@ -3,7 +3,7 @@
 # Cambia la plantilla de latex al directorio donde esté
 ../utils/expande-URLs.py . ../utils/short-links.json
 pandoc --template=/home/jmerelo/Libros/curso-git/utils/plantilla-kdp.latex \
-    -V language=spanish -V lang=spanish \
+    -V lang=es-ES \
     -V author='JJ Merelo' -V title='Aprende Python como si estuvieras en el siglo XXI'\
     -V documentclass=book\
     -S --latex-engine=xelatex  \
