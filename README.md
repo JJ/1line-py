@@ -59,6 +59,14 @@ cd txt
 Necesitarás tener instalado [pandoc](http://pandoc.org) para que
 funcionen los scripts. 
 
+## Si necesitas ayuda
+
+Únete
+al
+[grupo de Telegram](https://www.meetup.com/es-ES/preview/Granada-Geek/events/242991009) para
+plantear dudas sobre los ejercicios del libro y sobre Python en
+general, o para hacer sugerencias o señalar errores.
+
 ## Licencia
 
 ![cc-by-sa](https://i.creativecommons.org/l/by-sa/3.0/es/88x31.png)
