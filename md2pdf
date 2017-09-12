@@ -2,11 +2,11 @@
 
 # Cambia la plantilla de latex al directorio donde esté
 ../utils/expande-URLs.py . ../utils/short-links.json
-pandoc --template=/home/jmerelo/Libros/curso-git/utils/plantilla-kdp.latex \
+pandoc --template="$PWD"/../utils/plantilla.latex \
     -V lang=es-ES \
     -V author='JJ Merelo' -V title='Aprende Python como si estuvieras en el siglo XXI'\
-    -V documentclass=book\
-    -S --latex-engine=xelatex  \
+    -V documentclass=extbook\
+    -S --latex-engine=xelatex \
     -o aprende-python-kdp.pdf \
     01.empezar-links.md  02.datos-links.md 03.logica-links.md 04.componiendo-links.md 05.identificando-links.md 06.sinpilas-links.md --toc
 rm *-links.md
