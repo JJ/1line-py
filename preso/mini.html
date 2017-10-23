@@ -111,7 +111,7 @@ False
 'La Nave'
 </code></pre></section>
 
-<section data-markdown>
+	      <section data-markdown>
   <textarea data-template>## Ejercicio
 > Definir una mini-tabla que contenga tres columnas en el conjunto de
 > datos del proyecto que hemos seleccionado. Se pueden copiar y pegar
@@ -139,291 +139,53 @@ True
 >Filtrar la tabla creada anteriormente por alguna característica
 > numérica o no </textarea></section>
 
-<section><pre><code>cifras_de = lambda numero: len(str(numero))
-potencias_de_2 = map( lambda num: 2**num, range(20))
-list(map( cifras_de, potencias_de_2 ))
-</code></pre></section>
 
-<section data-markdown>
-  <textarea data-template>## Ejercicios
+<section><h1>Acumulando</h1>
+  <pre><code>>>>suma=0
+>>> for fila in tabla[1:]:
+...     suma=suma+fila[2]
+...     
+...
+>>>  suma
+80
+  </code></pre>
+</section>
 
-> Calcular los múltiplos de 3 entre los 100 primeros
-> números naturales. ¿Qué tipo de estructura de datos podemos usar?
-> ¿Cómo se averigua, con un test simple, si es un múltiplo de tres?
-> ¿Se puede modificar la secuencia de operaciones anterior para
-> detectar múltiplos de 9?</textarea></section>
+<section><h1>Listos para programar</h1>
+  <pre><code>#!/usr/bin/env python
 
+"""Define una tabla y filtra por algún valor"""
+cabecera = ["Lugar","Tipo","Asistencia"]
+tabla=[cabecera]
+tabla.append( ["La Nave","Taller",10] )
+tabla.append( ["Universidad", "Mesa redonda", 70])
+solo_tabla = tabla[1:]
+suma=0
+for fila in solo_tabla:
+    suma=suma+fila[2]
+print(suma)</code></pre>
+</section>
 
-<section><pre><code>type(potencias_de_2)
-&lt;class 'map'>
-</code></pre></section>
+<section><h1>Ejecutando el programa</h1>
+  <h2 class='fragment'>Doble click en carpeta</h2>
+  <pre><code>$ python3 tabla.py 
+80
+  </code></pre></section>
 
-<section><pre><code>potencias_de_2=(2,4,8,16,32)
-type(potencias_de_2)
-&lt;class 'tuple'>
-</code></pre></section>
-
-<section><pre><code>potencias_de_2.insert(64)
-Traceback (most recent call last):
-  File "&lt;stdin>", line 1, in <module>
-AttributeError: 'tuple' object has no attribute 'insert'
-</code></pre></section>
-
-<section><pre><code>potencias_de_2 = list( potencias_de_2)
-potencias_de_2.insert(len(potencias_de_2),64)
-</code></pre></section>
-
-<section><pre><code>potencias_de_2
-[2, 4, 8, 16, 32, 64]
-</code></pre></section>
-
-<section><pre><code>bash
-python -c "print(list(map(lambda n: n/2 == n//2, range(1000))))"
-</code></pre></section>
-
-<section><pre><code>python -c "print('\n'.join(map(lambda n: str( n/2 == n//2 ), range(1000))))"
-</code></pre></section>
-
-<section><pre><code>python -c "es_par = lambda n: str(n/2 == n//2);print('\n'.join(map(es_par, range(1000))))"
-</code></pre></section>
-
-<section><pre><code>python -m timeit -s "print('\n'.join(map(lambda n: str( n/2 == n//2 ),
-range(1000))))"
-</code></pre></section>
-
-<section><pre><code>100000000 loops, best of 3: 0.00571 usec per loop
-</code></pre></section>
-
-<section><pre><code>from timeit import timeit
-</code></pre></section>
-
-<section><pre><code>timeit(setup="map(lambda n: str( n/2 == n//2 ), range(1000))")
-0.006306399000095553
-timeit(setup="es_par = lambda n: str(n/2 == n//2);map(es_par, range(1000))")
-0.006795324999984587
-</code></pre></section>
-
-<section><pre><code>timeit(setup="es_par = lambda n: str(n/2 == n//2);map(es_par, range(10000))")
-0.006140023999250843
-timeit(setup="map(lambda n: str( n/2 == n//2 ), range(10000))")
-0.008905056998628424
-</code></pre></section>
-
-<section><pre><code>timeit(setup="es_par = lambda n: str(n^1 == 0);map(es_par, range(10000))")
-0.006006274999890593
-</code></pre></section>
-
-<section>
-  <section><pre><code>>>> fibonacci = [1,1,2,3]
-fibonacci = [1,1,2,3]
->>> fibonacci.append(5)
-fibonacci.append(5)</code></pre>
-  </section>
-<section><pre><code>>>> fibonacci.pop()
-fibonacci.pop()
-5
->>> fibonacci
-fibonacci
-[1, 1, 2, 3]
-</code></pre></section>
-  </section>
-  
-<section><pre><code>suma_cifras = lambda n:  sum(map(int,list(str(n))))
-def is_multiple_of_3(n): sum = suma_cifras(n)
-      return is_multiple_of_3(sum)
-          if (sum >= 10)
-          else
-              (True
-              if (sum==3) or (sum==9) else False)
-</code></pre></section>
-
-<section>
-  <section data-markdown>
-    <textarea data-template>## Ejercicios
-
-> Usar una función recursiva para calcular el factorial
-> de un número. ¿Habría alguna otra forma de hacerlo? ¿Cuál es más
-> rápida para números pequeños? ¿Y para números más
-> grandotes?</textarea></section>
-
-  <section><h1>Sucesión marchosa</h1>
-
-    <pre><code>def fib(n) {n<2 ? 1 : fib(n-1)+fib(n-2)}</code></pre>
-
-    <aside class='notes'>Está en Groovy, pero la idea es compacta y
-      está más o menos clara.</aside>
-  </section>
-
-  <section data-markdown>
-    <textarea data-template>## Ejercicio
-> Calcular los 20 primeros elementos de la sucesión de
-> Fibonacci. ¿Hasta que número es más o menos razonable hacerlo de
-> esta forma? </textarea></section>
+<section><h1>Todo bajo control</h1>
+  <h2>¿Recordáis el repositorio de GitHub?</h2>
+  <pre class='fragment'><code>git add tabla.py
+git commit -am "Crea programa para procesar tabla"
+  </code></pre>
 </section>
 
 <section data-markdown>
   <textarea data-template>## Ejercicio
-> Subir a http://gist.github.com alguno de los ejercicios creados
->anteriormente, usando comentarios para explicarlo. Difundirlo también
->por Twitter, con la etiqueta #1linepy, enlazándolo.</textarea></section>
-
-<section data-markdown>
-  <textarea data-template>## Ejercicio
-
->  Alternativamente a los gist, crear un repositorio en
->GitHub con los ejercicios, cada uno en un fichero correspondiente, y
->con un enlace y explicación en el `README.md` creado. Una vez más,
->difundir por Twitter con `#1linepy`</textarea></section>
-
-<section><pre><code>juego = { 'jugador'   :'Johnny',
-      'mano'      : ['5♠','Q♣','8♥'],
-      'estrategia': lambda mano: min(mano) } 
-</code></pre></section>
+>Convertir en un programa las diferentes órdenes anteriores,
+> ejecutarlas y subirlas
+> a GitHub</textarea></section>
 
 
-
-<section><pre><code>juego.items()
-dict_items([('jugador', 'Johnny'), ('mano', ['5♠', 'Q♣', '8♥']), ('estrategia', <function <lambda> at 0x7fcd3e298a60>)])
-</code></pre></section>
-
-<section><pre><code>def juega( mano ): return mano['estrategia'](mano['mano'])
-</code></pre></section>
-
-<section><pre><code>from random import random
-juego_ricky = { 'jugador'   :'Ricky', 
-	        'mano'      : ['3♠','4♣','A♥'], 
-		'estrategia': lambda mano: mano[int(random()*len(mano))] }
-				
-juega(juego_ricky)
-'3♠'
-</code></pre></section>
-
-<section data-markdown>
-	<textarea data-template>
-		## Ejercicio
->  diseñar una estructura de datos para sucesiones
-> matemáticas que contenga el nombre de la sucesión, el elemento
-> inicial, y la función para calcular el siguiente elemento. Diseñar
-> también una función que efectivamente calcule el siguiente elemento
-> a partir del valor inicial. </textarea></section>
-
-
-<section><pre><code>mano_ricky= set( ['3♠','4♣','A♥'] )
-</code></pre></section>
-
-<section><pre><code>'3♠' in mano_ricky
-True
-</code></pre></section>
-
-<section data-markdown>
-	<textarea data-template>
-		## Ejercicio
-
->generar una baraja de cartas y una función que extraiga
-> una mano de 3 cartas de ella. </textarea></section>
-
-<section><pre><code>mano_johnny= set( ['7♣', '7♥', '7♦'] )
-mano_johnny.intersection(mano_ricky)
-set()
-</code></pre></section>
-
-<section><pre><code>mano_johnny - {'7♥'}
-{'7♥', '7♣'}
-</code></pre></section>
-
-<section><pre><code>from random import choice
-mano_johnny = mano_johnny | { choice(baraja) }
-</code></pre></section>
-
-<section><pre><code>mano_johnny = mano_johnny | { baraja.pop() }
-</code></pre></section>
-
-<section><pre><code>pip3 install bpython
-</code></pre></section>
-
-<section><pre><code>sudo pip3 install bpython
-</code></pre></section>
-
-<section><pre><code>pip3 install --user bpython
-</code></pre></section>
-
-<section><pre><code>list(zip(sorted(['3♠','4♣','A♥']),sorted(['7♣', '7♥', '7♦'])))
-[('3♠', '7♣'), ('4♣', '7♥'), ('A♥', '7♦')]
-</code></pre></section>
-
-<section data-markdown>
-	<textarea data-template>
-		## Ejercicio
-
->crear una serie de fracciones, desde 1/3 hasta 1/99 y
-> hallar su suma. </textarea></section>
-
-<section><pre><code>from functools import reduce
-def fact(n): return reduce( lambda prev,this: prev*this, range(1,n+1),1)
-</code></pre></section>
-
-<section data-markdown>
-	<textarea data-template>
-		## Ejercicio
-
-> Programar una función de Mandelbrot, usando números
-> complejos, de la misma forma. </textarea></section>
-
-
-<section><pre><code>def fib(n):
-      return reduce( lambda prev,this: prev + [prev[-2]+prev[-1]],
-                      range(1,n+1), [1,1])
-      
-fib(12)
-[1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377]
-</code></pre></section>
-
-<section data-markdown>
-	<textarea data-template>
-		## Ejercicio
-
-> una generalización de las sucesiones de Fibonacci son
->las
->[de Lucas](https://en.wikipedia.org/wiki/Generalizations_of_Fibonacci_numbers),
->que usan números arbitrarios como los números iniciales y que también
->multiplican los términos anteriores. Programar
->la función `lucas` que genere estas sucesiones, y definir la función
->de Fibonacci como un caso particular de la misma.  </textarea></section>
-
-<section><h1>Comprensión de listas: <em>map</em> + <em>filter</em></h1>
-  <pre><code>[Fraction(1,n) for n in range(1,100) if n % 2]
-</code></pre></section>
-
-<section><pre><code>[str(valor)+card for card in ["♠","♣","♥","♦"] 
-    for valor in ['A','J','Q','K',2,3,4,5,6,7,8,9,10]]
-</code></pre></section>
-
-<section data-markdown>
-	<textarea data-template>
-		## Ejercicio
-
-> para una urbanización con 4 bloques, 3 plantas por
-> bloque, dos pisos por planta, A y B, generar todos los posibles
-> pisos que hay en la forma que se considere más conveniente.</textarea></section>
-
-
-<section><h1>Aplicando y reduciendo</h1>
-
-  <pre><code>from random import random
-aleatorios = [int(random()*10000) for _ in range(10000)]
-def cuenta_pares( prev, this ): prev[this&1 ] += 1; return prev;
-from functools import reduce
-reduce( cuenta_pares, aleatorios, [0,0])
-</code></pre></section>
-
-<section data-markdown>
-	<textarea data-template>
-		## Ejercicio
-
->Si habéis ejecutado el generador de números aleatorios
-> de arriba, habréis visto que rara vez el resultado es exactamente la
-> mitad de cada uno. ¿Cuanta desviación hay? Realizar una función que
-> contabilice la desviación del generador de números aleatorios. </textarea></section>
 
 			</div>
 		</div>
