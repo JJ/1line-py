@@ -49,15 +49,21 @@ revisión y consejos para transformar este material en una clase.
 
 ## Para generar el libro
 
+Necesitarás tener instalado [pandoc](http://pandoc.org), LaTeX y las tipografías
+usadas para que funcionen los scripts.
+
+Para instalar todas las dependencias en Ubuntu 16.04:
+
+```
+sudo apt install pandoc texlive-xetex lmodern texlive-fonts-recommended
+```
+
 ```
 cd txt
 ../md2pdf # PDF
 ../md2docx # Procesador de textos
 ../md2epub # ePub
 ```
-
-Necesitarás tener instalado [pandoc](http://pandoc.org) para que
-funcionen los scripts. 
 
 ## Si necesitas ayuda
 
