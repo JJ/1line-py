@@ -39,9 +39,13 @@ $endfor$
 $if(euro)$
   \newcommand{\euro}{€}
 $endif$
-$if(mainfont)$
-    \setmainfont[$for(mainfontoptions)$$mainfontoptions$$sep$,$endfor$]{$mainfont$}
-$endif$
+
+% follow https://tex.stackexchange.com/questions/31739/specify-different-fonts-for-bold-and-italic-with-fontspec
+\setmainfont[
+ BoldFont={DejaVu Sans Bold}, 
+ ItalicFont={DejaVu Sans Oblique},
+]{DejaVu Sans}
+ 
 $if(sansfont)$
     \setsansfont[$for(sansfontoptions)$$sansfontoptions$$sep$,$endfor$]{$sansfont$}
 $endif$
