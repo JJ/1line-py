@@ -1,4 +1,7 @@
-\documentclass[14pt,$if(lang)$$babel-lang$,$endif$$if(papersize)$$papersize$paper,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
+\documentclass[16pt,$if(lang)$$babel-lang$,$endif$$if(papersize)$$papersize$paper,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
+
+\usepackage{scrextend}
+\changefontsizes[16pt]{12pt}
 
 %% My stuff
 \usepackage[paperwidth=6in,paperheight=9in]{geometry}
@@ -50,7 +53,7 @@ $if(sansfont)$
     \setsansfont[$for(sansfontoptions)$$sansfontoptions$$sep$,$endfor$]{$sansfont$}
 $endif$
 
-\setmonofont[Mapping=tex-ansi,Scale=0.6]{DejaVuSansMono}
+\setmonofont[Mapping=tex-ansi,Scale=0.75]{DejaVuSansMono}
 
 $if(mathfont)$
     \setmathfont(Digits,Latin,Greek)[$for(mathfontoptions)$$mathfontoptions$$sep$,$endfor$]{$mathfont$}
@@ -260,7 +263,10 @@ $endif$
 $if(lof)$
 \listoffigures
 $endif$
+
+
 $body$
+
 
 $if(natbib)$
 $if(bibliography)$
