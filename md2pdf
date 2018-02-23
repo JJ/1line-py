@@ -6,8 +6,6 @@ pandoc --template="$PWD"/../utils/plantilla.latex \
     -V lang=es-ES \
     -V author='JJ Merelo' -V title='Aprende Python como si estuvieras en el siglo XXI'\
     -V documentclass=extbook\
-    --variable mainfont="DejaVuSans" \
-    --variable monofont="DejaVuSansMono" \
     -S --latex-engine=xelatex \
     -o aprende-python-kdp.pdf \
     01.empezar-links.md  02.datos-links.md 03.logica-links.md 04.componiendo-links.md 05.identificando-links.md 06.sinpilas-links.md --toc
