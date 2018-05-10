@@ -60,9 +60,9 @@ sudo apt install pandoc texlive-xetex lmodern texlive-fonts-recommended
 
 ```
 cd txt
-../md2pdf # PDF
-../md2docx # Procesador de textos
-../md2epub # ePub
+../md2pdf   # PDF
+../md2docx  # Procesador de textos
+../md2epub  # ePub
 ```
 
 ## Si necesitas ayuda
