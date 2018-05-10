@@ -69,7 +69,7 @@ cd txt
 
 Únete
 al
-[grupo de Telegram](https://www.meetup.com/es-ES/preview/Granada-Geek/events/242991009) para
+[grupo de Telegram](https://t.me/joinchat/AOR8MglinRI4Jzk8cUwFdA) para
 plantear dudas sobre los ejercicios del libro y sobre Python en
 general, o para hacer sugerencias o señalar errores.
 
